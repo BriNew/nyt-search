@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>nyt-article-search-api</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <form id="search-form">
+      
+      <label for="begin">
+        Begin Date:
+      </label>
+      <input type="text" id="begin-date" name="begin" required pattern="[0-9]{4}[0-9]{2}[0-9]{2}" placeholder="YYYYMMDD">
+      
+      <label for="end">
+        End Date:
+      </label>
+      <input type="text" id="end-date" name="end" required pattern="[0-9]{4}[0-9]{2}[0-9]{2}" placeholder="YYYYMMDD">
+      
+      <label for="search">
+        Search Articles:
+      </label>
+      <input type="text" id="search-term" name="search">
+      
+      <label for="state">Select State:</label>
+      <select id="state" name="state">
+        <option value="california">CALIFORNIA</option>
+        <option value="oregon">OREGON</option>
+        <option value="washington">WASHINGTON</option>
+      </select>
+      
+      
+      
+      <button id="submit" type="submit">Submit</button>
+      
+    </form>
+    
+    <main>
+      <ul id="results">
+        
+      </ul>
+      
+    </main>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
