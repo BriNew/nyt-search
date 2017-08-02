@@ -89,7 +89,7 @@ $(document).ready(function() {
         <li>
           <h3>${doc.headline.main}</h3>
           <p>${doc.snippet}</p>
-          <img src="http://nytimes.com/${doc.multimedia[2].url}" />
+     
           <p>${doc.web_url}</p>
           <p>${doc.source}</p>
         </li>
@@ -110,6 +110,7 @@ $(document).ready(function() {
 //thoughts on input?
 //location problems
 //multimedia
+//<img src="http://nytimes.com/${doc.multimedia[2].url}" />
 
 
 
