@@ -1,7 +1,7 @@
-label {
+select, input {
   display: block;
 }
 
-input {
+input, select {
   margin-bottom: 10px;
 }
