@@ -5,263 +5,302 @@
     <meta name="viewport" content="width=device-width">
     <title>nyt search api</title>
     <link href="index.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="float-grid.css" />
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
   </head>
   <body>
-    <form id="search-form">
 
-      
-      <label for="month">Month:</label>
-      <select id="month">
-        <option>January</option>
-        <option>February</option>
-        <option>March</option>
-        <option>April</option>
-        <option>May</option>
-        <option>June</option>
-        <option>July</option>
-        <option>August</option>
-        <option>September</option>
-        <option>October</option>
-        <option>November</option>
-        <option>December</option>
-      </select>
-      
-      <label for="year">Year:</label>
-      <select id="year">
-        <option>1851</option>
-        <option>1852</option>
-        <option>1853</option>
-        <option>1854</option>
-        <option>1855</option>
-        <option>1856</option>
-        <option>1857</option>
-        <option>1858</option>
-        <option>1859</option>
-        <option>1860</option>
-        <option>1861</option>
-        <option>1862</option>
-        <option>1863</option>
-        <option>1864</option>
-        <option>1865</option>
-        <option>1866</option>
-        <option>1867</option>
-        <option>1868</option>
-        <option>1869</option>
-        <option>1870</option>
-        <option>1871</option>
-        <option>1872</option>
-        <option>1873</option>
-        <option>1874</option>
-        <option>1875</option>
-        <option>1876</option>
-        <option>1877</option>
-        <option>1878</option>
-        <option>1879</option>
-        <option>1880</option>
-        <option>1881</option>
-        <option>1882</option>
-        <option>1883</option>
-        <option>1884</option>
-        <option>1885</option>
-        <option>1886</option>
-        <option>1887</option>
-        <option>1888</option>
-        <option>1889</option>
-        <option>1890</option>
-        <option>1891</option>
-        <option>1892</option>
-        <option>1893</option>
-        <option>1894</option>
-        <option>1895</option>
-        <option>1896</option>
-        <option>1897</option>
-        <option>1898</option>
-        <option>1899</option>
-        <option>1900</option>
-        <option>1901</option>
-        <option>1902</option>
-        <option>1903</option>
-        <option>1904</option>
-        <option>1905</option>
-        <option>1906</option>
-        <option>1907</option>
-        <option>1908</option>
-        <option>1909</option>
-        <option>1910</option>
-        <option>1911</option>
-        <option>1912</option>
-        <option>1913</option>
-        <option>1914</option>
-        <option>1915</option>
-        <option>1916</option>
-        <option>1917</option>
-        <option>1918</option>
-        <option>1919</option>
-        <option>1920</option>
-        <option>1921</option>
-        <option>1922</option>
-        <option>1923</option>
-        <option>1924</option>
-        <option>1925</option>
-        <option>1926</option>
-        <option>1927</option>
-        <option>1928</option>
-        <option>1929</option>
-        <option>1930</option>
-        <option>1931</option>
-        <option>1932</option>
-        <option>1933</option>
-        <option>1934</option>
-        <option>1935</option>
-        <option>1936</option>
-        <option>1937</option>
-        <option>1938</option>
-        <option>1939</option>
-        <option>1940</option>
-        <option>1941</option>
-        <option>1942</option>
-        <option>1943</option>
-        <option>1944</option>
-        <option>1945</option>
-        <option>1946</option>
-        <option>1947</option>
-        <option>1948</option>
-        <option>1949</option>
-        <option>1950</option>
-        <option>1951</option>
-        <option>1952</option>
-        <option>1953</option>
-        <option>1954</option>
-        <option>1955</option>
-        <option>1956</option>
-        <option>1957</option>
-        <option>1958</option>
-        <option>1959</option>
-        <option>1960</option>
-        <option>1961</option>
-        <option>1962</option>
-        <option>1963</option>
-        <option>1964</option>
-        <option>1965</option>
-        <option>1966</option>
-        <option>1967</option>
-        <option>1968</option>
-        <option>1969</option>
-        <option>1970</option>
-        <option>1971</option>
-        <option>1972</option>
-        <option>1973</option>
-        <option>1974</option>
-        <option>1975</option>
-        <option>1976</option>
-        <option>1977</option>
-        <option>1978</option>
-        <option>1979</option>
-        <option>1980</option>
-        <option>1981</option>
-        <option>1982</option>
-        <option>1983</option>
-        <option>1984</option>
-        <option>1985</option>
-        <option>1986</option>
-        <option>1987</option>
-        <option>1988</option>
-        <option>1989</option>
-        <option>1990</option>
-        <option>1991</option>
-        <option>1992</option>
-        <option>1993</option>
-        <option>1994</option>
-        <option>1995</option>
-        <option>1996</option>
-        <option>1997</option>
-        <option>1998</option>
-        <option>1999</option>
-        <option>2000</option>
-        <option>2001</option>
-        <option>2002</option>
-        <option>2003</option>
-        <option>2004</option>
-        <option>2005</option>
-        <option>2006</option>
-        <option>2007</option>
-        <option>2008</option>
-        <option>2009</option>
-        <option>2010</option>
-        <option>2011</option>
-        <option>2012</option>
-        <option>2013</option>
-        <option>2014</option>
-        <option>2015</option>
-        <option>2016</option>
-        <option>2017</option>
-      </select>
-      
-      <label for="state">Select State:</label>
-      <select id="state" name="state">
-        <option>Alabama</option>
-        <option>Alaska</option>
-        <option>Arizona</option>
-        <option>Arkansas</option>
-        <option>California</option>
-        <option>Colorado</option>
-        <option>Connecticut</option>
-        <option>Delaware</option>
-        <option>Florida</option>
-        <option>Georgia</option>
-        <option>Hawaii</option>
-        <option>Idaho</option>
-        <option>Illinois</option>
-        <option>Indiana</option>
-        <option>Iowa</option>
-        <option>Kansas</option>
-        <option>Kentucky</option>
-        <option>Louisiana</option>
-        <option>Maine</option>
-        <option>Maryland</option>
-        <option>Massachusetts</option>
-        <option>Michigan</option>
-        <option>Minnesota</option>
-        <option>Mississippi</option>
-        <option>Missouri</option>
-        <option>Montana</option>
-        <option>Nebraska</option>
-        <option>Nevada</option>
-        <option>New Hampshire</option>
-        <option>New Jersey</option>
-        <option>New Mexico</option>
-        <option>New York</option>
-        <option>North Carolina</option>
-        <option>North Dakota</option>
-        <option>Ohio</option>
-        <option>Oklahoma</option>
-        <option>Oregon</option>
-        <option>Pennsylvania</option>
-        <option>Rhode Island</option>
-        <option>South Carolina</option>
-        <option>South Dakota</option>
-        <option>Tennessee</option>
-        <option>Texas</option>
-        <option>Utah</option>
-        <option>Vermont</option>
-        <option>Virginia</option>
-        <option>Washington</option>
-        <option>West Virginia</option>
-        <option>Wisconsin</option>
-        <option>Wyoming</option>
-      </select>
-      
-
-      
-      <button id="submit" type="submit">Submit</button>
-      
-    </form>
-    
+    <header role="banner">
+    <div class="row"> 
+      <div class="col-12" id="banner-col">
+        <h1>This Month in History</h1>
+        <h3>Search the New York Times archive, from 1851 to present.</h3>
+      </div>
+    </div>  
+  </header>
     <main>
-      <ul id="results">
-        
-      </ul>
-      
+      <form id="search-form">
+  
+        <div class="row">
+          
+          <div class="col-4" id="search-col">
+            <label for="month">Month:</label>
+            <select id="month" >
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+              <option selected="selected">August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>
+            </select>
+            
+            <label for="year">Year:</label>
+            <select id="year">
+              <option>1851</option>
+              <option>1852</option>
+              <option>1853</option>
+              <option>1854</option>
+              <option>1855</option>
+              <option>1856</option>
+              <option>1857</option>
+              <option>1858</option>
+              <option>1859</option>
+              <option>1860</option>
+              <option>1861</option>
+              <option>1862</option>
+              <option>1863</option>
+              <option>1864</option>
+              <option>1865</option>
+              <option>1866</option>
+              <option>1867</option>
+              <option>1868</option>
+              <option>1869</option>
+              <option>1870</option>
+              <option>1871</option>
+              <option>1872</option>
+              <option>1873</option>
+              <option>1874</option>
+              <option>1875</option>
+              <option>1876</option>
+              <option>1877</option>
+              <option>1878</option>
+              <option>1879</option>
+              <option>1880</option>
+              <option>1881</option>
+              <option>1882</option>
+              <option>1883</option>
+              <option>1884</option>
+              <option>1885</option>
+              <option>1886</option>
+              <option>1887</option>
+              <option>1888</option>
+              <option>1889</option>
+              <option>1890</option>
+              <option>1891</option>
+              <option>1892</option>
+              <option>1893</option>
+              <option>1894</option>
+              <option>1895</option>
+              <option>1896</option>
+              <option>1897</option>
+              <option>1898</option>
+              <option>1899</option>
+              <option>1900</option>
+              <option>1901</option>
+              <option>1902</option>
+              <option>1903</option>
+              <option>1904</option>
+              <option>1905</option>
+              <option>1906</option>
+              <option>1907</option>
+              <option>1908</option>
+              <option>1909</option>
+              <option>1910</option>
+              <option>1911</option>
+              <option>1912</option>
+              <option>1913</option>
+              <option>1914</option>
+              <option>1915</option>
+              <option>1916</option>
+              <option>1917</option>
+              <option>1918</option>
+              <option>1919</option>
+              <option>1920</option>
+              <option>1921</option>
+              <option>1922</option>
+              <option>1923</option>
+              <option>1924</option>
+              <option>1925</option>
+              <option>1926</option>
+              <option>1927</option>
+              <option>1928</option>
+              <option>1929</option>
+              <option>1930</option>
+              <option>1931</option>
+              <option>1932</option>
+              <option>1933</option>
+              <option>1934</option>
+              <option>1935</option>
+              <option selected="selected">1936</option>
+              <option>1937</option>
+              <option>1938</option>
+              <option>1939</option>
+              <option>1940</option>
+              <option>1941</option>
+              <option>1942</option>
+              <option>1943</option>
+              <option>1944</option>
+              <option>1945</option>
+              <option>1946</option>
+              <option>1947</option>
+              <option>1948</option>
+              <option>1949</option>
+              <option>1950</option>
+              <option>1951</option>
+              <option>1952</option>
+              <option>1953</option>
+              <option>1954</option>
+              <option>1955</option>
+              <option>1956</option>
+              <option>1957</option>
+              <option>1958</option>
+              <option>1959</option>
+              <option>1960</option>
+              <option>1961</option>
+              <option>1962</option>
+              <option>1963</option>
+              <option>1964</option>
+              <option>1965</option>
+              <option>1966</option>
+              <option>1967</option>
+              <option>1968</option>
+              <option>1969</option>
+              <option>1970</option>
+              <option>1971</option>
+              <option>1972</option>
+              <option>1973</option>
+              <option>1974</option>
+              <option>1975</option>
+              <option>1976</option>
+              <option>1977</option>
+              <option>1978</option>
+              <option>1979</option>
+              <option>1980</option>
+              <option>1981</option>
+              <option>1982</option>
+              <option>1983</option>
+              <option>1984</option>
+              <option>1985</option>
+              <option>1986</option>
+              <option>1987</option>
+              <option>1988</option>
+              <option>1989</option>
+              <option>1990</option>
+              <option>1991</option>
+              <option>1992</option>
+              <option>1993</option>
+              <option>1994</option>
+              <option>1995</option>
+              <option>1996</option>
+              <option>1997</option>
+              <option>1998</option>
+              <option>1999</option>
+              <option>2000</option>
+              <option>2001</option>
+              <option>2002</option>
+              <option>2003</option>
+              <option>2004</option>
+              <option>2005</option>
+              <option>2006</option>
+              <option>2007</option>
+              <option>2008</option>
+              <option>2009</option>
+              <option>2010</option>
+              <option>2011</option>
+              <option>2012</option>
+              <option>2013</option>
+              <option>2014</option>
+              <option>2015</option>
+              <option>2016</option>
+              <option>2017</option>
+            </select>
+            
+            <label for="state">State:</label>
+            <select id="state" name="state">
+              <option>Alabama</option>
+              <option>Alaska</option>
+              <option>Arizona</option>
+              <option>Arkansas</option>
+              <option selected="selected">California</option>
+              <option>Colorado</option>
+              <option>Connecticut</option>
+              <option>Delaware</option>
+              <option>Florida</option>
+              <option>Georgia</option>
+              <option>Hawaii</option>
+              <option>Idaho</option>
+              <option>Illinois</option>
+              <option>Indiana</option>
+              <option>Iowa</option>
+              <option>Kansas</option>
+              <option>Kentucky</option>
+              <option>Louisiana</option>
+              <option>Maine</option>
+              <option>Maryland</option>
+              <option>Massachusetts</option>
+              <option>Michigan</option>
+              <option>Minnesota</option>
+              <option>Mississippi</option>
+              <option>Missouri</option>
+              <option>Montana</option>
+              <option>Nebraska</option>
+              <option>Nevada</option>
+              <option>New Hampshire</option>
+              <option>New Jersey</option>
+              <option>New Mexico</option>
+              <option>New York</option>
+              <option>North Carolina</option>
+              <option>North Dakota</option>
+              <option>Ohio</option>
+              <option>Oklahoma</option>
+              <option>Oregon</option>
+              <option>Pennsylvania</option>
+              <option>Rhode Island</option>
+              <option>South Carolina</option>
+              <option>South Dakota</option>
+              <option>Tennessee</option>
+              <option>Texas</option>
+              <option>Utah</option>
+              <option>Vermont</option>
+              <option>Virginia</option>
+              <option>Washington</option>
+              <option>West Virginia</option>
+              <option>Wisconsin</option>
+              <option>Wyoming</option>
+            </select>
+            
+            <button id="submit" type="submit">Search</button>
+            
+            
+          </div>
+          
+          <div class="col-8" id="results-col">
+            
+            <ul id="results">
+              
+            </ul>
+          </div>
+          
+          <!--<div class="col-4" id="results-col">-->
+            
+          <!--  <ul id="results">-->
+              
+          <!--  </ul>-->
+          <!--</div>-->
+          
+        </div>
+  
+      </form>
+    </main>
+    <!--<main>-->
+    <!--  <div class="row">-->
+    <!--    <p id="no-results"></p>-->
+    <!--    <div class="col-4" id="results-col">-->
+          
+    <!--      <ul id="results">-->
+            
+    <!--      </ul>-->
+    <!--    </div>-->
+    <!--  </div>-->
     </main>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
