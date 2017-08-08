@@ -4,73 +4,45 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  /*background-color: #f1f1f1;*/
   opacity: .8;
-  
-  
 }
 
 header {
   position: sticky;
-	top: 0;
-	font-family: 'News Cycle', sans-serif;
-	font-weight: bold;
-	margin-top: 32px;
-	
+  top: 0;
+  font-family: 'Old Standard TT', serif;
+  font-weight: bold;
+  margin-top: 32px;
 }
 
 h1 {
   font-family: 'Abril Fatface', cursive;
   color: #f1f1f1;
-  
-}
-
-body {
-
 }
 
 #banner-col {
   background-color: #df5b3a;
-  /*background-color: #dd5f3f;*/
-  /*background-color: #dd673f;*/
-  /*background-color: #f67d55;*/
-  /*background-color: #f66555;*/
-  /*background-color: #f45c29;*/
-  /*background-color: #FF6835;*/
-  /*opacity: .8;*/
   border-radius: 2px;
-
-
 }
 
 select, label, button {
   display: block;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: px;
   width: 50%;
-
+  font-family: 'Old Standard TT', serif;
 }
 
 label {
-  font-family: 'Old Standard TT', serif;
-  /*font-family: 'News Cycle', sans-serif;*/
   color: #f1f1f1;;
-
-
 }
 
 select {
-  font-family: 'Old Standard TT', serif;
-  /*font-family: 'News Cycle', sans-serif;*/
-  color: black;
   font-weight: bold;
 }
 
 button {
-  font-family: 'Old Standard TT', serif;
   font-weight: bold;
-  color: black;
   padding-top: 5px; 
   padding-bottom: 5px;
   font-size: 15px;
@@ -79,18 +51,11 @@ button {
 #search-col {
   position: sticky;
   top: 161px;
-
-
-  /*border: 1px solid gray;*/
   border-radius: 2px;
   margin-top: 25px;
-  /*margin-bottom: 25px;*/
   padding: 25px;
   background-color: #424242;
-  /*background-color: #dd5f3f;*/
-  /*opacity: .8;*/
   margin-right: 2.5%;
-
 }
 
 #month, #year {
@@ -104,7 +69,6 @@ button {
 #results-col {
   display: none;
   background-color: #f1f1f1;
-  /*opacity: .8;*/
   font-family: 'Old Standard TT', serif;
   border-radius: 2px;
   margin-top: 25px;
@@ -119,10 +83,4 @@ button {
   color: #df5b3a;
   font-weight: bold;
 }
-
-
-/*font-family: 'Abril Fatface', cursive;*/
-/*font-family: 'Bree Serif', serif;*/
-/*font-family: 'News Cycle', sans-serif;*/
-/*font-family: 'Old Standard TT', serif;*/
 
