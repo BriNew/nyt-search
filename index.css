@@ -53,23 +53,27 @@ select, label, button {
 }
 
 label {
-  font-family: 'Bree Serif', serif;
+  font-family: 'Old Standard TT', serif;
   /*font-family: 'News Cycle', sans-serif;*/
   color: #f1f1f1;;
+
 
 }
 
 select {
-  font-family: 'Bree Serif', serif;
+  font-family: 'Old Standard TT', serif;
   /*font-family: 'News Cycle', sans-serif;*/
   color: black;
+  font-weight: bold;
 }
 
 button {
-  font-family: 'Abril Fatface', cursive;
-  font-weight: 100;
+  font-family: 'Old Standard TT', serif;
+  font-weight: bold;
   color: black;
-
+  padding-top: 5px; 
+  padding-bottom: 5px;
+  font-size: 15px;
 }
 
 #search-col {
