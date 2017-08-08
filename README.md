@@ -3,8 +3,9 @@ I chose to work with the NYT's Search Aricle API, with the purpose of searching 
 
 ![Alt text](nyt-search-api/nytapiscreenshot1.png "Initial")
 ![alt text](nyt-search-api/nytapiscreenshot2.png "Final")
-![Alt text](/nyt-search-api/nytapiscreenshot1.png?raw=true "Optional Title")
-
+![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![solarized palette](https://github.com/altercation/solarized/raw/master/img/solarized-palette.png)
+![solarized palette](https://github.com/altercation/solarized/raw/master/img/solarized-palette.png)
 
 
 
