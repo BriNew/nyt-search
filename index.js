@@ -1,51 +1,37 @@
-//http://api.nytimes.com/svc/search/v2/articlesearch.json?q=new+york+times&page=2&sort=oldest&api-key=eeb714a7a30e4f1a9acf6ced636a91a3
-
 $(document).ready(function() {
   
   const URL = 'https://api.nytimes.com/svc/search/v2/articlesearch.json';
   const KEY = 'eeb714a7a30e4f1a9acf6ced636a91a3';
+  //The API only accepts a start date and end date, both formatted as YYYYMMDD. 
+  //startMMDD and endMMDD will depend on the month selected by the user, changing it to MMDD and merged with the value of year to create the API friendly format of YYYYMMDD
+  
   var startMMDD = "";
   var endMMDD = "";
-
-  
-  
+ 
+  //JSON method to obtain data from API
   function getResults(startMMDD, endMMDD, state) {
     $.getJSON(URL, {'api-key': KEY, 'begin_date': startMMDD, 'end_date': endMMDD, 'fq': 'glocations:('+state+')' }, 
     function(data) {
       console.log(data);
-      // if(data.response.meta.hits == 0) {
-      //   $('#results').hide();
-    
-      //   //alert("No results for this time");
-      //   return $('#no-results').text("Sorry, no results for this time and place.");
-        
-  
-      // }
+
+      //The numerical value data.response.meta.hits returns equals the number of articles possibly displayed
       if(data.response.meta.hits > 0){
         $('#no-results').hide();
         $('#results').show();
         const results = data.response.docs.map((doc, index) => showResults(doc));
         $('#results').html(results);
-      }
-      
+      }     
       else {
         $('#results').hide();
         $('#no-results').show();
-      
-        //alert("No results for this time");
         return $('#no-results').text("Sorry, no results for this time and place.");
       }
-
   });
   }
-  
-  //response.meta.hits == 0
-  //Dates user sees = MM/YYYY OR August,1950
-  //Dates API sees = YYYYMMDD to YYYYMMDD OR 19500801 to 19500832
-  
-  
+
+  //If the user selects Month: February and Year: 2000, there is 29 days in that month of that year, therefore startMMDD = "20000201" and endMMDD = "20000229", creating the final format of our dates
   function MMDDFormat(month, year) {
-    var year = $('#year').val();//why does this have to be here, but not month?
+    var year = $('#year').val();
     if((month == 'February') && (year % 4 == 0) && (year % 100 !== 0) || (year % 400 == 0)) {
       startMMDD = year+'0201';
       endMMDD = year+'0229';
@@ -101,14 +87,11 @@ $(document).ready(function() {
     
     console.log(startMMDD);
     console.log(endMMDD);
-    
   }
  
-  
+  //Rendering data to our HTML
   function showResults(doc) {
     console.log(doc.multimedia[2]);
-    //$('#no-results').hide();
-    
     return `
         <li>
           <h3>${doc.headline.main}</h3>
@@ -118,23 +101,16 @@ $(document).ready(function() {
       `;
   }
   
-  
   $('#search-form').submit(function(event) {
     event.preventDefault();
    $('#results-col').show();
-    
     var month = $('#month').val();
-    //var year = $('#year').val();
     var state = $('#state').val();
     MMDDFormat(month);
     getResults(startMMDD, endMMDD, state);
-  });
-  
+  });  
 })
-//thoughts on input?
-//location problems
-//multimedia
-//<img src="http://nytimes.com/${doc.multimedia[2].url}" />
+
 
 
 
