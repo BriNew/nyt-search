@@ -1,9 +1,8 @@
 ### nyt-search-api - a project that brought together everything I had been learning about APIs. 
 I chose to work with the NYT's Search Aricle API, with the purpose of searching their archive.
 
-###Screenshots
-![alt text](nyt-search-api/nytapiscreenshot1.png "Initial")
-![alt text](nyt-search-api/nytapiscreenshot2.png "Final")
+![alt text](nyt-search-api/nytapiscreenshot1.png "Initial");
+![alt text](nyt-search-api/nytapiscreenshot2.png "Final");
 
 
 
