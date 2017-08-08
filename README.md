@@ -3,7 +3,9 @@ I chose to work with the NYT's Search Aricle API, with the purpose of searching 
 
 ![alt text](nyt-search-api/nytapiscreenshot1.png "Initial")
 ![alt text](nyt-search-api/nytapiscreenshot2.png "Final")
-![ScreenShot](https://raw.github.com/{BriNew}/{nyt-search-api}/{master}/{nyt-search-api/nytapiscreenshot1.png})
+![Alt text](/nyt-search-api/nytapiscreenshot1.png?raw=true "Optional Title")
+![Alt text](nyt-search-api/nytapiscreenshot1.pngraw=true "Optional Title")
+![Alt text](nyt-search-api/nytapiscreenshot1.png?raw=true "Optional Title")
 
 
 
