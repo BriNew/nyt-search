@@ -1,7 +1,111 @@
-select, input {
-  display: block;
+html { 
+  background: url(http://www.publicdomainpictures.net/pictures/60000/velka/old-paper-texture-background-1380404417tNE.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: .8;
 }
 
-input, select {
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background-color: #df5b3a;
+  margin-top: 1px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  font-family: 'Old Standard TT', serif;
+  font-weight: bold;
+
+}
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  color: #f1f1f1;
+}
+
+#banner-col {
+  background-color: #df5b3a;
+  border-radius: 2px;
+}
+
+select, label, button {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+  font-family: 'Old Standard TT', serif;
+}
+
+label {
+  color: #f1f1f1;;
+}
+
+select {
+  font-weight: bold;
+}
+
+button {
+  font-weight: bold;
+  padding-top: 5px; 
+  padding-bottom: 5px;
+  font-size: 15px;
+}
+
+#search-col {
+  position: sticky;
+  top: 152px;
+  border-radius: 2px;
+  margin-top: 26px;
+  padding: 25px;
+  background-color: #424242;
+  margin-right: 2.5%;
+}
+
+#month, #year {
   margin-bottom: 10px;
+}
+
+#state {
+  margin-bottom: 20px;
+}
+
+#results-col {
+  display: none;
+  background-color: #f1f1f1;
+  font-family: 'Old Standard TT', serif;
+  border-radius: 2px;
+  margin-top: 25px;
+  border: 3px solid #ff7648;
+}
+
+.snippet {
+  font-weight: bold;
+}
+
+.link {
+  color: #df5b3a;
+  font-weight: bold;
+}
+
+footer {
+  height: 40px;
+  width: 100%;
+  background-color: #df5b3a;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.footer_p {
+  text-align: center;
+  line-height: 10px;
+  margin-bottom: 0;
+  font-family: 'Old Standard TT', serif;
 }
