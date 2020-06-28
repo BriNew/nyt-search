@@ -1,5 +1,5 @@
 ### nyt-search-api - a project that brought together everything I had been learning about APIs. 
-https://brinew.github.io/nyt-search-api/
+https://brinew.github.io/nyt-search/
 
 I chose to work with the NYT's Search Aricle API, with the purpose of searching their archive.
 
