@@ -1,7 +1,7 @@
 $(document).ready(function() {
   
   const URL = 'https://api.nytimes.com/svc/search/v2/articlesearch.json';
-  const KEY = 'eeb714a7a30e4f1a9acf6ced636a91a3';
+  const KEY = 'DNrvCwxUCMNyqPOJJ0ZukSslLgjsi2Cs';
   //The API only accepts a start date and end date, both formatted as YYYYMMDD. 
   //startMMDD and endMMDD will depend on the month selected by the user, changing it to MMDD and merged with the value of year to create the API friendly format of YYYYMMDD
   
