@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  
+  const hello;
   const URL = 'https://api.nytimes.com/svc/search/v2/articlesearch.json';
   const KEY = 'DNrvCwxUCMNyqPOJJ0ZukSslLgjsi2Cs';
   //The API only accepts a start date and end date, both formatted as YYYYMMDD. 
